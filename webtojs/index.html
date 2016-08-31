@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    
+    <style>
+    
+    .haha{
+        background-color:red;
+        border-radius:5px;
+        border:0px;
+        width:100px;
+        height:40px;
+        color:#fff;
+    }
+    
+    .mt10{
+        
+        margin-top:10px;
+    }
+    
+    </style>
+    
+    <body>
+        
+        <div style="margin-top: 20px">
+            
+            <h2>JS与OC交互</h2>
+            
+            <button class="haha mt10" onclick="tianbai.call()">调用原生的oc</button>
+        </div>
+        <div>
+            
+            <button class="haha mt10" onclick="call()">调用原生js</button>
+            
+            
+        </div>
+        
+        <div>
+            
+            
+            <button class="haha mt10" onclick="gotoOc()">传值调用原生js</button>
+            
+        </div>
+        
+        <script>
+            
+            var call = function(){
+            
+                //调用原生oc
+                tianbai.pushVC();
+            
+            }
+        
+        
+        var gotoOc = function(){
+        
+            //调用原生oc
+            tianbai.getCall("hello");
+        
+        }
+        
+        
+        var jsAlert = function(req){
+        
+            alert(req);
+        
+        }
+        
+        
+        </script>
+        
+    </body>
+</html>
